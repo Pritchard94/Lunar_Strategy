@@ -1,0 +1,71 @@
+nav ul li, .hero h2, .hero p, .hero button, button{
+    cursor: pointer;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+nav ul a:hover{
+    border-bottom: 2px solid #7C14FD;
+}
+nav ul li button:hover{
+    background-color: #7C14FD;
+    color:#fff;
+    border-bottom: none;
+}
+
+/* *{
+    overflow-x: hidden;
+} */
+nav svg{
+    width:20px;
+}
+.hero, .book, .special{
+    position: relative;
+    background-image: url(./Assets/hero-bg.svg);
+    background-size: contain;
+}
+.hero::before ,.special::before{
+    opacity: 0.1;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #8e31ff45;
+   
+}
+.work{
+    background-color: #efe2ff60;
+}
+
+
+.card, .card2{
+    position: relative;
+    background-image: url(/Assets/hero-bg.svg);
+}
+.card h4{
+    position: absolute;
+    top:-20px;
+    left: -10px;
+    font-weight: 00;
+    font-size: 70px;
+    color: #e0c8fdd7;
+}
+.card2 h4{
+    position: absolute;
+    top:-20px;
+    right: -10px;
+    font-weight: 700;
+    font-size: 70px;
+    color: #e0c8fdd7;
+}
+.meeting:hover{
+    transform: scale(1.2);
+}
+
+.drop{
+    transition: all .4s;
+
+}
